@@ -17,7 +17,9 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <TopNav />
-        <Providers>{children}</Providers>
+        <Providers>
+          <main className="container max-auto p-10">{children}</main>
+        </Providers>
       </body>
     </html>
   );

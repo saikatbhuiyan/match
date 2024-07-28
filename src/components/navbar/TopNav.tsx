@@ -8,6 +8,7 @@ import {
 import Link from "next/link";
 import React from "react";
 import { GiMatchTip } from "react-icons/gi";
+import NavLink from "./NavLink";
 
 export default async function TopNav() {
   const memberLinks = [
@@ -42,10 +43,7 @@ export default async function TopNav() {
         <NavbarContent justify="center">
           {memberLinks &&
             memberLinks.map((item) => (
-              <NavbarItem as={Link} key={item.href} href={item.href}>
-                {" "}
-                {item.label}
-              </NavbarItem>
+              <NavLink key={item.href} href={item.href} label={item.label} />
             ))}
         </NavbarContent>
         <NavbarContent justify="end">
