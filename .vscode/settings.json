@@ -1,0 +1,32 @@
+{
+    "workbench.colorTheme": "One Dark Pro",
+    "workbench.iconTheme": "vscode-icons",
+    "tabnine.experimentalAutoImports": true,
+    "redhat.telemetry.enabled": true,
+    "vscode-office.editorTheme": "Github Dark",
+    "editor.fontSize": 20,
+    "debug.console.fontSize": 20,
+    "terminal.integrated.fontSize": 20,
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "workbench.preferredDarkColorTheme": "Cobalt2",
+    "workbench.preferredHighContrastColorTheme": "Monokai",
+    "window.customTitleBarVisibility": "windowed",
+    "editor.fontLigatures": false,
+    "editor.codeLensFontSize": 20,
+    "editor.accessibilitySupport": "on",
+    "workbench.editorAssociations": {
+        "{git,gitlens}:/**/*.{md,csv,svg}": "default"
+    },
+    "npm.keybindingsChangedWarningShown": true,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "editor.minimap.sectionHeaderFontSize": 20,
+    "chat.editor.fontSize": 20,
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "files.autoSave": "afterDelay",
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true
+}
