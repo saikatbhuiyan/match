@@ -6,7 +6,7 @@ import { prisma } from "@/lib/prisma";
 import { ActionResult } from "@/types";
 import { User } from "@prisma/client";
 import { AuthError } from "next-auth";
-import { signIn } from "@/auth";
+import { signIn, signOut } from "@/auth";
 import { LoginSchema } from "@/lib/schemas/loginSchema";
 
 export async function signInUser(
@@ -34,6 +34,10 @@ export async function signInUser(
       return { status: "error", error: "Something else went wrong" };
     }
   }
+}
+
+export async function signOutUser() {
+  await signOut({ redirectTo: "/" });
 }
 
 export async function registerUser(
